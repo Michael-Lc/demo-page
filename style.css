@@ -1,0 +1,71 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  transition: 0.4s;
+  scroll-behavior: smooth;
+}
+
+.bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/web-design.jpg");
+}
+
+#contact {
+  height: 75vh;
+  background-image: url("images/email.png");
+}
+
+#navbar {
+  width: max-content;
+  display: flex;
+  justify-content: flex-end;
+  transition: 0.7s;
+  top: -60px;
+  left: 80%;
+}
+
+form {
+  background-color: rgba(240, 248, 255, 0.8);
+}
+
+textarea {
+  resize: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-fluid,
+  header {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  form {
+    margin: 1%;
+  }
+
+  #navbar {
+    left: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #navbar {
+    left: 66%;
+  }
+}

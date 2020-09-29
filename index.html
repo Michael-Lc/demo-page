@@ -72,14 +72,19 @@
     </div>
 
     <!-- Contact Me -->
-    <div class="container-fluid mb-1 bg" id="contact">
-      <div class="h-100 d-flex justify-content-end align-items-end">
-        <form action="mailto:something@gmail.com" method="post" class="col-lg-6 col-sm-6 col-md-8 rounded mb-4">
+    <div class="container-fluid h-100 mb-1 bg" id="contact">
+      <div class="d-flex justify-content-end align-items-end">
+        <form action="mailto:something@gmail.com" method="post" class="col-lg-6 col-sm-6 col-md-8 rounded">
           <h2 class="text-center">Send me an e-mail</h2>
   
           <div class="form-group">
             <label for="name">Name: </label>
             <input type="text" name="name" id="name" class="form-control" placeholder="Your Name..." required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="example@example.com" required />
           </div>
   
           <div class="form-group">

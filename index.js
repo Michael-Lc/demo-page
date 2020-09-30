@@ -39,3 +39,9 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "-300px";
   }
 }
+
+function submitForm() {
+  const form = document.getElementById("form");
+  form.action = "mailto:michaellc143@gmail.com";
+  form.submit();
+}
